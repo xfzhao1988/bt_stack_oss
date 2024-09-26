@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\iar\bin\while.out</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\iar\bin\while.map</Path>
+            </Output>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\iar\bin\while.log</Path>
+            </Output>
+        </Parent>
+    </Tool>
+    <Tool>
+        <Name>compiler</Name>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\utils\am_util_stdio.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\iar\bin\am_util_stdio.lst</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\src\while.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\iar\bin\while.lst</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\iar\startup_iar.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3p_evb\examples\while\iar\bin\startup_iar.lst</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

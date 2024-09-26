@@ -1,0 +1,9 @@
+# ninja log v5
+1	229	7471833340583889	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/am_devices_led.o	b89c74297831d51d
+231	431	7471833342593975	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/am_util_faultisr.o	45f9256fb5894ace
+435	596	7471833344284321	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/am_util_stdio.o	9e4b88622f85cf6e
+598	804	7471833346325529	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/am_util_delay.o	42748d5862bd90b8
+806	867	7471833346995542	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/startup_iar.o	6cead68cb869ad31
+870	1083	7471833349115527	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/reset_states.o	807a076ac95aa4aa
+1085	1195	7471833350205526	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/reset_states.out	e7d364493e3f406c
+1197	1209	7471833350495532	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/reset_states/iar/bin/reset_states.bin	e19b3405d2156437

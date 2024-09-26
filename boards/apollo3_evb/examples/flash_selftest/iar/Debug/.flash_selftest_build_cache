@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>compiler</Name>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\utils\am_util_stdio.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\iar\bin\am_util_stdio.lst</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\src\flash_selftest.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\iar\bin\flash_selftest.lst</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\iar\startup_iar.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\iar\bin\startup_iar.lst</Path>
+            </Output>
+        </Parent>
+    </Tool>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\iar\bin\flash_selftest.out</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\iar\bin\flash_selftest.map</Path>
+            </Output>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\flash_selftest\iar\bin\flash_selftest.log</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

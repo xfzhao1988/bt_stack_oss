@@ -1,0 +1,84 @@
+**********************************************************************************************
+
+This is SDK update targeting the Apollo3 family of MCUs include Apollo3, Apollo3 Blue and
+Apollo3 Blue Plus.  Released on 05Sep2024 (revision release_sdk_3_2_0-dd5f40c14b).
+
+**********************************************************************************************
+
+SDK supports all Apollo3 evaluation boards from Ambiq.
+- Apollo3 Blue EVB (see /boards/apollo3_evb)
+- Apollo3 Blue EVB + Cygnus Shield (see /boards/apollo3_evb_cygnus)
+- Apollo3 Blue Plus EVB (see /boards/apollo3p_evb)
+- Apollo3 Blue Plus EVB + Cygnus Shield (see /boards/apollo3p_evb_cygnus)
+
+SDK includes a number of predefined examples for each configuration.
+
+IDE/ToolChain Support:
+----------------------
+AmbiqSuite SDK supports GCC, IAR , Segger and Keil IDEs.
+Support for older Keil/ARMCC 5060750 has been deprecated.
+
+This release has been tested with:
+- GCC 13.2.1 20231009 [Arm GNU Toolchain 13.2.Rel1 based on GCC 13.2]
+- IAR ANSI C/C++ Compiler V9.40.2.374/W64 for ARM
+- ARMCC 6190004 [Keil V5.38a using ArmClang V6.19]
+- GCC SEGGER-CC 16.0.9 [Embedded Studio v8.10d released 2024-03-25]
+
+* All devices are natively supported in J-Link v6.80a or later.
+
+* A .vscode folder with a sample configuration is included in the hello_world and freertos_mspi_display examples, setup for apollo3p.
+  A Visual Studio Code quickstart guide is provided to help get the prepackaged configuration running on your environment. Please see 
+  the Visual Studio Code Quickstart Guide in /docs/Apollo3 Family AmbiqSuite Visual Studio Code Project Example Quick Start Guide v1p0.pdf.
+
+
+Known Issues:
+-------------
+None
+
+Top Level Directory Structure:
+------------------------------
++-- ambiq_ble <BLE apps/profiles/services used on top of Cordio>
++-- boards
+¦   +-- apollo3p_evb <Ambiq Apollo3p BGA Evaluation Board>
+¦   ¦   +-- bsp <Board Specific code>
+¦   ¦   +-- examples <Reference Examples>
+¦   +-- apollo3p_evb_cygnus <Ambiq Apollo3p Evaluation Board with Display Shield>
+¦   ¦   +-- bsp <Board Specific code>
+¦   ¦   +-- examples <Reference Examples>
+¦   +-- apollo3_evb <Ambiq Apollo3 Evaluation Board>
+¦   ¦   +-- bsp <Board Specific code>
+¦   ¦   +-- examples <Reference Examples>
+¦   +-- apollo3_evb_cygnus <Ambiq Apollo3 Evaluation Board with Display Shield>
+¦   ¦   +-- bsp <Board Specific code>
+¦   ¦   +-- examples <Reference Examples>
++-- bootloader <utility functions for secondary bootloader or other applications>
++-- CMSIS <ARM CMSIS definitions and functions>
++-- devices <Device Drivers for selected peripherals using Apollo3/3p HAL>
++-- docs
+¦   +-- example_guide <Doxygen Documentation for Reference Examples>
+¦   +-- licenses
+¦   +-- registers <Register Documentation>
+¦   +-- releasenotes <Release Notes and Change History>
+¦   +-- user_guide <Doxygen Documentation>
+¦   +-- Apollo3 Family AmbiqSuite Visual Studio Code Project Example Quick Start Guide v1p0.pdf
++-- makedefs <Part of build infrastructure>
++-- mcu <HAL and Register definitions>
++-- pack <SVD files>
++-- third_party <third Party Code/Documents>
+¦   +-- cordio <BLE Stack from ARM>
+¦   +-- FreeRTOS9 <Reference FreeRTOS open source implementation>
+¦   +-- FreeRTOSv10.5.1 <Reference FreeRTOS open source implementation>
+¦   +-- mbedtls-2.4.2 <Reference mbed-tls open source implementation>
+¦   +-- prime_mpi <Reference Prime number parallel processing implementation>
+¦   +-- uecc <small and fast ECDH and ECDSA implementation>
++-- tools
+¦   +-- apollo3_amota <Tools to interact with Ambiq's BLE Reference Application for Image download and updates>
+¦   +-- apollo3_scripts <Provisioning and Image generation/update tools, along with SBL updates>
+¦   +-- ble_throughput_app
+¦   +-- bootloader_scripts
+¦   ¦   +-- generate_ota_descriptor.py
+¦   ¦   +-- uart_boot_host.py
+¦   +-- bsp_generator <Tools for Automated BSP generation>
+¦   +-- linker_config <Part of build infrastructure>
++-- utils <General Utilities>
++-- VERSION.txt

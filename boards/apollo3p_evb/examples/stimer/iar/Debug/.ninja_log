@@ -1,0 +1,9 @@
+# ninja log v5
+0	240	7471855430619235	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/am_devices_led.o	c569ea7c5aa9355a
+242	457	7471855432798522	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/stimer.o	96afb41a8264dc90
+461	663	7471855434868519	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/am_util_delay.o	30fb7efe078b27a7
+666	876	7471855436984171	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/am_util_faultisr.o	fa87a5e0db2f0c67
+878	1039	7471855438644169	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/am_util_stdio.o	5afa4d90979c678f
+1041	1100	7471855439264164	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/startup_iar.o	f55bff02ffce97f0
+1102	1205	7471855440259886	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/stimer.out	30efc257ffde8441
+1207	1220	7471855440529891	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb/examples/stimer/iar/bin/stimer.bin	b1a4fa92ec5516a5

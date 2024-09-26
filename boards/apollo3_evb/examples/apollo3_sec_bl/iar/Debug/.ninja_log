@@ -1,0 +1,8 @@
+# ninja log v5
+0	205	7471809571768655	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/apollo3_sec_bl/iar/bin/am_util_delay.o	f8cd408220602649
+207	403	7471809573768847	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/apollo3_sec_bl/iar/bin/am_util_faultisr.o	ea170f2380fa6e6f
+408	644	7471809576154459	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/apollo3_sec_bl/iar/bin/apollo3_secbl.o	ab65af081e535699
+647	808	7471809577844490	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/apollo3_sec_bl/iar/bin/am_util_stdio.o	4d5b69bd33b4d71f
+811	871	7471809578464479	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/apollo3_sec_bl/iar/bin/startup_iar.o	d4db0b913a3dbde3
+873	963	7471809579344464	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/apollo3_sec_bl/iar/bin/apollo3_sec_bl.out	8e4131762cc12fd3
+966	977	7471809579614480	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/apollo3_sec_bl/iar/bin/apollo3_sec_bl.bin	84aeb88624b70c48

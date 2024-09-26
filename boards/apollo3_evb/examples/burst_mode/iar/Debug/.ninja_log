@@ -1,0 +1,8 @@
+# ninja log v5
+0	240	7471831496168703	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/burst_mode/iar/bin/am_util_delay.o	bd4eb20b50140f72
+242	570	7471831499484318	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/burst_mode/iar/bin/burst_mode.o	186507adc2a0c88c
+574	851	7471831502284317	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/burst_mode/iar/bin/am_util_faultisr.o	e2e087d212c64c43
+854	914	7471831502974627	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/burst_mode/iar/bin/startup_iar.o	bbca1fa3853aac48
+918	2152	7471831515290397	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/burst_mode/iar/bin/am_util_stdio.o	855f4c87278693d5
+2154	2248	7471831516246066	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/burst_mode/iar/bin/burst_mode.out	719105c14fc1c68e
+2249	2261	7471831516506065	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/burst_mode/iar/bin/burst_mode.bin	9f98157487c0e1e3

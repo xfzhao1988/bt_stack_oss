@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>compiler</Name>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\utils\am_util_stdio.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\bin\am_util_stdio.lst</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\src\ios_fifo_host.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\bin\ios_fifo_host.lst</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\utils\am_util_delay.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\bin\am_util_delay.lst</Path>
+            </Output>
+        </Parent>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\startup_iar.c</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\bin\startup_iar.lst</Path>
+            </Output>
+        </Parent>
+    </Tool>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\bin\ios_fifo_host.out</Path>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\bin\ios_fifo_host.map</Path>
+            </Output>
+            <Output>
+                <Path>C:\jenkins-agent\workspace\AmbiqSuite_release_3_3p\workspace\boards\apollo3_evb\examples\ios_fifo_host\iar\bin\ios_fifo_host.log</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

@@ -1,0 +1,38 @@
+//******************************************************************************
+//
+// Linker file for Segger Embedded Studio linker configuration.
+//
+//******************************************************************************
+
+// Define Memory Regions
+define memory with size = 4G;
+define region ROMEM      = [from 0x0000C000 size 0x001F4000];
+define region RWMEM      = [from 0x10013000 size 0x000AD000];
+define region TCM        = [from 0x10000000 size 0x00010000];
+define region STACKMEM   = [from 0x10010000 size 12288];
+
+// Thread-local-storage load image
+define block tbss                           { section .tbss,      section .tbss.*  };
+define block tdata                          { section .tdata,     section .tdata.* };
+define block tls with fixed order           { block tbss, block tdata };
+define block tdata_load                     { copy of block tdata };
+
+// Define Blocks
+define block heap  with size = 0, alignment = 8, readwrite access { };
+define block stack with size = 12288, alignment = 8, readwrite access { };
+
+define block FLASHBASE                      { section .patch };
+
+// Configure Initialization
+do not initialize                       { section .non_init, section .non_init.*};
+initialize by copy with packing=auto    { section .data, section .data.* };
+initialize by symbol __SEGGER_init_heap { block heap  };
+
+// Place Inputs
+// Place Inputs
+place at start of ROMEM              { section .vectors, block FLASHBASE };
+place in ROMEM                       { readexec, readonly };
+place in ROMEM                       { block tdata_load };
+place in RWMEM with auto order        { block heap, block tls, readwrite, zeroinit };
+place in STACKMEM with fixed order       { block stack };
+place in TCM { section .tcm };

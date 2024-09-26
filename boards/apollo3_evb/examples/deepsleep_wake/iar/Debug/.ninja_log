@@ -1,0 +1,8 @@
+# ninja log v5
+0	74	7471832059082251	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/deepsleep_wake/iar/bin/startup_iar.o	3ccb1771ec973487
+76	285	7471832061159977	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/deepsleep_wake/iar/bin/deepsleep_wake.o	fad7eab4004d62b7
+290	457	7471832062901741	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/deepsleep_wake/iar/bin/am_util_stdio.o	f0521d1443565bc5
+461	653	7471832064851733	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/deepsleep_wake/iar/bin/am_util_delay.o	9724d0a907dd2adf
+655	869	7471832066987405	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/deepsleep_wake/iar/bin/am_devices_led.o	36ce709e600c7108
+871	975	7471832068027387	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/deepsleep_wake/iar/bin/deepsleep_wake.out	c5c5f1fb7fa70f14
+977	989	7471832068307410	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/deepsleep_wake/iar/bin/deepsleep_wake.bin	acf59f378b6d9def

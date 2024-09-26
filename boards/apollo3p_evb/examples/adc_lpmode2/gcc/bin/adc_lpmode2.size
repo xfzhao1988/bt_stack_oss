@@ -1,0 +1,43 @@
+   text	   data	    bss	    dec	    hex	filename
+   1582	      0	      4	   1586	    632	bin/adc_lpmode2.o
+    896	      0	      0	    896	    380	bin/am_devices_led.o
+    132	      0	      0	    132	     84	bin/am_util_delay.o
+    334	      0	    512	    846	    34e	bin/am_util_faultisr.o
+   3971	      0	   1029	   5000	   1388	bin/am_util_stdio.o
+    404	   4096	      0	   4500	   1194	bin/startup_gcc.o
+   1700	      0	     88	   1788	    6fc	am_hal_adc.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   8844	    116	    204	   9164	   23cc	am_hal_ble.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   1876	   7116	      0	   8992	   2320	am_hal_ble_patch_b0.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   1304	      0	      3	   1307	    51b	am_hal_burst.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   1031	      0	      0	   1031	    407	am_hal_cachectrl.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    560	      0	      0	    560	    230	am_hal_clkgen.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   1896	      0	    440	   2336	    920	am_hal_cmdq.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   3147	     16	    128	   3291	    cdb	am_hal_ctimer.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+      4	      0	      0	      4	      4	am_hal_debug.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    360	     16	     28	    404	    194	am_hal_entropy.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   3420	     16	      0	   3436	    d6c	am_hal_flash.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+     52	      0	      0	     52	     34	am_hal_global.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   2718	      0	    592	   3310	    cee	am_hal_gpio.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+     24	      0	      0	     24	     18	am_hal_interrupt.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   8248	      0	  13272	  21520	   5410	am_hal_iom.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   2139	      0	     72	   2211	    8a3	am_hal_ios.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    468	      0	      0	    468	    1d4	am_hal_itm.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    904	      0	      0	    904	    388	am_hal_mcuctrl.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   7108	      0	   6648	  13756	   35bc	am_hal_mspi.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   1856	      0	     32	   1888	    760	am_hal_pdm.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   2892	      0	      2	   2894	    b4e	am_hal_pwrctrl.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    276	      0	      0	    276	    114	am_hal_queue.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    408	      0	      4	    412	    19c	am_hal_reset.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   1148	      0	      0	   1148	    47c	am_hal_rtc.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   4960	      0	    112	   5072	   13d0	am_hal_scard.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    268	      0	     12	    280	    118	am_hal_secure_ota.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    764	      0	    512	   1276	    4fc	am_hal_security.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    612	      0	      0	    612	    264	am_hal_stimer.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    348	      0	      4	    352	    160	am_hal_sysctrl.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    284	      0	      0	    284	    11c	am_hal_systick.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    360	      0	      0	    360	    168	am_hal_tpiu.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   3520	      0	    192	   3712	    e80	am_hal_uart.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+    427	      0	      0	    427	    1ab	am_hal_wdt.o (ex ../../../../../mcu/apollo3p/hal/gcc/bin/libam_hal.a)
+   3540	    128	   2080	   5748	   1674	am_bsp.o (ex ../../../bsp/gcc/bin/libam_bsp.a)
+    396	      0	      0	    396	    18c	am_bsp_pins.o (ex ../../../bsp/gcc/bin/libam_bsp.a)
+  14668	     68	   5752	  20488	   5008	bin/adc_lpmode2.axf

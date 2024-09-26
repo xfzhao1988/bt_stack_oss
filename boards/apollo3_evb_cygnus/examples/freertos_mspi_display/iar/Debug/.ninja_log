@@ -1,0 +1,25 @@
+# ninja log v5
+0	968	7471833984809350	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/am_devices_mspi_rm69330.o	4a8c6c8d3411f149
+970	1259	7471833987735028	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/render_task.o	8a13a9db77f34fb8
+1264	1374	7471833988855033	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/list.o	2636dedf9d1456bd
+1377	1613	7471833991280621	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/freertos_mspi_display.o	c6d61fdc7b59b4c8
+1616	1785	7471833992961278	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/heap_2.o	86b2643ce42f0896
+1787	2015	7471833995314638	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/event_groups.o	a86f0626f46cd420
+2017	2264	7471833997760344	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/main_task.o	f26419844a6b32c6
+2266	3256	7471834007707199	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/queue.o	26d885acaad9156
+3259	5525	7471834030311285	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/NeZa1.o	609f1854ef56899d
+5527	7814	7471834053201864	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/NeZa2.o	b62eef9295a85c52
+7815	8163	7471834056781862	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/port.o	817934dbba48d678
+8165	8381	7471834058951860	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/am_util_delay.o	da4d4a07c0817a08
+8384	10798	7471834083010547	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/ambiq_logo.o	24305b283a90f7f4
+10801	12033	7471834095485825	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/am_util_stdio.o	d0b18aaf71c5d0a
+12035	12083	7471834096005831	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/am_util_debug.o	a18e186ce06fd017
+12084	12364	7471834098775833	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/am_util_faultisr.o	8a871bf528028b78
+12366	13633	7471834111478941	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/tasks.o	f2821fa81ef9b7eb
+13636	16058	7471834135600114	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/watch_background.o	ae99647ff1ca0b19
+16061	16309	7471834138183196	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/rtos.o	431ff065afdce573
+16312	16381	7471834138963188	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/startup_iar.o	c38fabcc079fac5e
+16385	16831	7471834143470004	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/timers.o	b3399f9bc7ea7801
+16833	16880	7471834143950007	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/portasm.o	c93367e08da5e097
+16882	17076	7471834145795759	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/freertos_mspi_display.out	c919a8088d56da0d
+17078	17116	7471834146425782	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb_cygnus/examples/freertos_mspi_display/iar/bin/freertos_mspi_display.bin	348ea062c2639bd0

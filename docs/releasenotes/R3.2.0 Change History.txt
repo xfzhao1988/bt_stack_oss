@@ -1,0 +1,185 @@
+**********************************************************************************************
+ 
+Apollo3 / Apollo3 Blue /Apollo3 Blue Plus update release on 05Sep2024 
+(revision release_sdk_3_2_0-dd5f40c14b).
+ 
+**********************************************************************************************
+----------------------------------------------------------------------------------------------
+Summary of Changes and Customer Impacts
+----------------------------------------------------------------------------------------------
+This is a combined release supporting updates to Apollo3 and Apollo3 Plus
+
+This release includes the following:
+*	Beta support for SEGGER Embedded Studio.
+*	Support for Keil/ARMCC 5060750 has been deprecated.
+*	Added Visual Studio Code template to hello_world.
+* 	Deprecated base addresses from am_reg_base_addresses.h.
+*	Updated FreeRTOS from v10.1.1 to v10.5.1 with LTS.
+
+
+----------------------------------------------------------------------------------------------
+Software Known Issues, Updates, and Defect Fixes
+----------------------------------------------------------------------------------------------
+
+\utils\am_util_bootloader.*
+\utils\am_util_multi_boot.*
+\utils\am_util_multi_boot_private.h
+\ambiq_ble\profiles\amota\amotas_main.c
+*	These files now replace the contents of \bootloader\. The \bootloader\ directory
+	   has been deprecated. 
+*	Updated calls for am_util_* functions.
+
+\ambiq_ble\apps\ancs\ancs_main.c
+*	Fixed incoming automatic call rejection issue.
+
+\ambiq_ble\apps\dtm_module\dtm_main.c
+*	Implemented Cooper Exchange Memory test items for Apollo4 Blue family.
+
+\devices\am_devices_mspi_atxp032.*
+*	Updated timing scan functionality for Apollo4 family.
+
+\devices\am_devices_mspi_atxp032.c
+\devices\am_devices_mspi_psram_aps6404l.c
+*	Fixed potential bugs related to XIP and scrambling configs for Apollo4 family.
+
+\devices\am_devices_mspi_rm69330.h
+*   	Updated row, column, and pixel size values. 
+
+\mcu\apollo3\hal\am_hal_adc.c
+\mcu\apollo3p\hal\am_hal_adc.c
+*       Moved pointer dereferences to after pointer valid checks.
+*       Updated am_hal_adc_disable() function to clear disable DMA in progress and clear status bits.
+*       Updated am_hal_adc_power_control to avoid programming ADCEN and TRIGSEL simultaneously, which 
+           can cause an erroneous interrupt. 
+
+\mcu\apollo3\hal\am_hal_ble.c
+\mcu\apollo3p\hal\am_hal_ble.c
+*       Fixed compiler warning for potential uninitialized variable pRamCode in am_hal_ble_patch_preload().
+
+\mcu\apollo3\hal\am_hal_ble_patch_b0.c
+\mcu\apollo3p\hal\am_hal_ble_patch_b0.c
+*       Fixed an ACL throughput drop issue when retransmission happens.
+        Program more ACL packets when TX buffer and time are available in the
+           process of connection event to avoid the limitation of maximum 4 TX
+           ACL packets in each connection event.
+
+\mcu\apollo3\hal\am_hal_global.h
+\mcu\apollo3p\hal\am_hal_global.h
+*       Updated to check the ARM compiler version before GCC compiler.
+
+\mcu\apollo3\hal\am_hal_gpio.c*
+\mcu\apollo3p\hal\am_hal_gpio.c*
+*       Added function am_hal_gpio_pinconfig_get. Added GPIO registers raw data get macros. 
+        Corrected the condition to set eGPRdZero.
+
+\mcu\apollo3\regs\am_reg_base_addresses.h
+\mcu\apollo3p\regs\am_reg_base_addresses.h
+\mcu\apollo3\regs\am_reg.h
+\mcu\apollo3p\regs\am_reg.h
+\mcu\apollo3\hal\am_hal_ios.c
+\mcu\apollo3p\hal\am_hal_ios.c
+*	Deprecated base addresses from reg_base_addresses.h. 
+	Please see \CMSIS\AmbiqMicro\Include\apollo3x.h for base addresses.
+
+\mcu\apollo3p\hal\am_hal_pwrctrl.c
+*       Added am_hal_burst_ldo_patch_check to am_hal_pwrctrl_ldo_vddx_active_trim_adj_default.
+
+\mcu\apollo3\hal\am_hal_mcuctrl.h
+\mcu\apollo3p\hal\am_hal_mcuctrl.h
+*       Removed AM_APOLLO3_MCUCTRL. AM_PART_APOLLO3_API will be used instead.
+
+\mcu\apollo3\hal\am_hal_mspi.*
+\mcu\apollo3p\hal\am_hal_mspi.*
+*       The MSPI blocking transfer mechanism has been optimized to reduce CE low
+           pulse width. The previous implementation could exceed some peripheral's
+           timing parameters.
+*       Added check to am_hal_mspi_status_get that is set if MSPI queue index matches
+           the end index. To be used to determine if a non-blocking transaction is complete.
+
+\mcu\apollo3\hal\am_hal_pdm.*
+\mcu\apollo3p\hal\am_hal_pdm.h
+*       Moved pointer dereferences to after pointer valid checks.
+*       Added interrupt service to manage PDM interrupts during DMA transfers.
+           Manages double buffered PDM DMA transfers.
+*       Added several functions to manage PDM FIFO.
+*       Updated am_hal_pdm_configure() to add option to not enable PDM conversions.
+
+\mcu\apollo3\hal\am_hal_uart.*
+\mcu\apollo3p\hal\am_hal_uart.*
+*	Added am_hal_uart_interrupt_queue_service and associated functions
+	   to support ISR handling of UART FIFOs (rx and tx).
+*       Updated am_hal_uart_errors_t naming.
+
+\third_party\cordio\ble-host\sources\hci\ambiq\hci_core.c
+*	Fixed code logic when sending packet fail if packet is fragmented.
+
+\third_party\cordio\ble-host\sources\hci\ambiq\hci_evt.c
+*	Fixed vendor complete event returned parameter parse issue. 
+
+\third_party\cordio\ble-host\sources\stack\att\att_eatt.c
+*   	Fixed EATT connection issue. Moved EattEstablishChannels behavior
+           to l2cCocDmConnCback where l2cap coc handle is valid. 
+
+\third_party\cordio\ble-host\sources\stack\att\attc_main.c
+\third_party\cordio\ble-host\sources\stack\att\attc_proc.c
+\third_party\cordio\ble-host\sources\stack\att\attc_sign.c
+\third_party\cordio\ble-host\sources\stack\att\atts_main.c
+\third_party\cordio\ble-host\sources\stack\att\atts_write.c
+\third_party\cordio\ble-profiles\sources\services\svc_core.c
+*	Fixed an array out of bounds issue, which could cause service discovery failure
+	   after disconnection and reconnection in multi-link scenarios. 
+*	Updated length of default device name from 6 to 11 characters.
+
+\third_party\cordio\ble-host\sources\stack\dm\dm_dev.c
+\third_party\cordio\ble-host\sources\stack\dm\dm_main.c
+*   	Updated so HCI vendor specific command complete event triggers the 
+           corresponding DM_VENDOR_SPEC_CMD_CMPL_IND event.
+
+\third_party\cordio\ble-host\sources\stack\dm\dm_conn.c
+\third_party\cordio\ble-profiles\sources\apps\watch\watch_main.c
+*   	Fixed a coexistence issue, where only one disconnection event is reported
+           after a DmDevReset() due to the event being overwritten. 
+
+\third_party\cordio\ble-host\sources\stack\dm\dm_bis_slave.c
+\third_party\cordio\ble-host\sources\stack\l2c\l2c_coc.c
+\third_party\cordio\ble-profiles\sources\apps\hidapp\hidapp_main.c
+*   	Fixed several compilation warning issues. 
+
+\third_party\cordio\ble-host\include\l2c_defs.h
+\third_party\cordio\ble-host\sources\hci\ambiq\hci_core.c
+*   	Support ACL packet reassembly for the scenario of start packet ACL length is 
+           smaller than L2C_HDR_LEN(4)
+
+\third_party\cordio\ble-host\sources\hci\ambiq\apollo3\hci_drv_apollo3.c
+*   	Added a stub for am_util_ble_crystal_trim_set() to HciDrvRadioBoot(), indicating 
+           where this function should be called at boot. Please see the article
+           "Apollo3 Blue SoC 32Mhz Crystal Calibration" at support.ambiq.com.
+
+\third_party\cordio\ble-host\sources\stack\l2c\l2c_coc.c
+\third_party\cordio\ble-host\sources\stack\att\att_eatt.c
+\third_party\cordio\ble-profiles\sources\apps\fit\fit_main.c
+\third_party\cordio\ble-profiles\sources\apps\watch\watch_main.c
+\third_party\cordio\ble-profiles\sources\profiles\hrps\hrps_main.c
+\third_party\cordio\ble-profiles\sources\services\svc_core.c
+*   	Fixed EATT connection issue and enabled notifications.
+
+\third_party\cordio\ble-profiles\include\app\app_db.h
+\third_party\cordio\ble-profiles\sources\apps\app\common\app_db.c
+\third_party\cordio\ble-profiles\sources\apps\fit\fit_main.c
+*  	Updated for Packetcraft r20.05 NVM service.
+
+\third_party\cordio\ble-profiles\sources\apps\app\common\app_hw.c
+*	Changed battery level to trigger notification in AppHWBattRead() for test purposes.
+
+\third_party\cordio\ble-profiles\sources\profiles\bas\bas_main.c
+\third_party\cordio\ble-profiles\sources\profiles\hrps\hrps_main.c
+*	If last notification confirmation not received, resend the last battery level and 
+	   heart rate value.
+
+utils\am_util.h
+*   	Added am_util_regdump.h to AM_PART_APOLLO3_API inludes.
+
+\utils\am_util_fault_isr.c
+*	Updated to using a local stack by default, which can be disabled by defining
+	   #define AM_HF_NO_LOCAL_STACK. By disabling the local stack, it will revert to
+	   using the existing MSP. 

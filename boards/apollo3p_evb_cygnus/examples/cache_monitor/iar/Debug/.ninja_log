@@ -1,0 +1,10 @@
+# ninja log v5
+1	915	7471855899494862	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/am_devices_mspi_psram_aps6404l.o	5e49f27c632953f2
+917	2156	7471855912014859	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/am_util_stdio.o	22f5feaa054972d0
+2160	2238	7471855912844864	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/prime_mpi.o	89b934350cc74377
+2240	2475	7471855915184860	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/am_util_delay.o	3bf5dd5fdd81f103
+2477	3069	7471855921114860	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/cache_monitor.o	72477c9cf1b09373
+3072	3302	7471855923460814	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/am_util_faultisr.o	de2c66292d1b7d2f
+3305	3372	7471855924180818	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/startup_iar.o	10a1b280949fb2b5
+3375	3536	7471855925726460	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/cache_monitor.out	3958e6f2057bc845
+3538	3550	7471855926066477	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3p_evb_cygnus/examples/cache_monitor/iar/bin/cache_monitor.bin	59729949bdc1f875

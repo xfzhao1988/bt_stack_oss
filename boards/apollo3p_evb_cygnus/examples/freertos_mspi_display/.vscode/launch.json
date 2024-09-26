@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${fileDirname}",
+            "executable": "../gcc/bin/${fileBasenameNoExtension}.axf",
+            "name": "Debug Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "serverpath": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe", // Your installation path may vary
+            "armToolchainPath": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin", // Your installation path may vary
+            "device": "AMA3B2KK-KBR",  // For Apollo3p device selection
+			 //"device": "AMA3B1KK-KBR", // For Apollo3 device selection
+            "interface": "swd",
+            "serialNumber": "", // If using external JLink, enter the serial number or nickname here
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceRoot}/../../../../pack/SVD/apollo3p.svd", // For Apollo3p device selection
+			//"svdFile": "${workspaceRoot}/../../../../pack/SVD/apollo3.svd", // For Apollo3 device selection
+            "showDevDebugOutput": "both",
+            "swoConfig": {
+                "enabled": true,
+                "decoders": [                    
+                    { "type": "console", "label": "ITM", "port": 0, "encoding": "ascii" }
+                ],
+               // "cpuFrequency": 48000000, // This is usually measured, not specified
+                "swoFrequency": 1000000,
+                "source": "probe"
+            },        }
+    ]
+}

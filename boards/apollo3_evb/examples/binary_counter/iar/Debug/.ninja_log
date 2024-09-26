@@ -1,0 +1,9 @@
+# ninja log v5
+0	226	7471809690454403	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/am_devices_led.o	ea87ac20705a402
+227	420	7471809692390020	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/am_util_delay.o	b25dd7cb5f3d64d6
+424	484	7471809693071185	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/startup_iar.o	d2f152836dee46cd
+487	650	7471809694726807	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/am_util_stdio.o	8aa4a24b1d22b259
+652	855	7471809696718540	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/am_util_faultisr.o	8216c199c5e1a574
+856	1076	7471809698956474	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/binary_counter.o	f46c0f8a1b5b7ded
+1079	1179	7471809699946501	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/binary_counter.out	f5d455c5064d5c54
+1182	1194	7471809700246457	C:/jenkins-agent/workspace/AmbiqSuite_release_3_3p/workspace/boards/apollo3_evb/examples/binary_counter/iar/bin/binary_counter.bin	f4302fc3cdd7c1e8
