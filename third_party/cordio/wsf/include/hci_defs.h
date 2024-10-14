@@ -40,6 +40,7 @@ extern "C" {
  *
  */
 /**@{*/
+//done
 #define HCI_CMD_HDR_LEN                              3       /*!< \brief Command packet header length */
 #define HCI_ACL_HDR_LEN                              4       /*!< \brief ACL packet header length */
 #define HCI_ISO_HDR_LEN                              4       /*!< \brief ISO packet header length */
@@ -57,6 +58,7 @@ extern "C" {
 #define HCI_EVT_VENDOR_SPEC_CMD_CMPL_PARAM_MAX_LEN   130     /*!< \brief Maximum length of vendor specific command complete event parameter */
 #define HCI_EVT_VENDOR_SPEC_EVT_PARAM_MAX_LEN        1       /*!< \brief Maximum length of vendor specific event parameter */
 
+//done
 #define HCI_ISO_DL_MIN_LEN                           4       /*!< ISO Data Load header minimum length */
 #define HCI_ISO_DL_MAX_LEN                           8       /*!< ISO Data Load header maximum length */
 #define HCI_ISO_TS_LEN                               4       /*!< ISO Data Load timestamp length */
@@ -66,6 +68,7 @@ extern "C" {
 /** \name Packet types
  *
  */
+//done
 #define HCI_CMD_TYPE                                 1       /*!< \brief HCI command packet */
 #define HCI_ACL_TYPE                                 2       /*!< \brief HCI ACL data packet */
 #define HCI_EVT_TYPE                                 4       /*!< \brief HCI event packet */
@@ -76,6 +79,7 @@ extern "C" {
  *
  */
 /**@{*/
+//done
 #define HCI_SUCCESS                                  0x00    /*!< \brief Success */
 #define HCI_ERR_UNKNOWN_CMD                          0x01    /*!< \brief Unknown HCI command */
 #define HCI_ERR_UNKNOWN_HANDLE                       0x02    /*!< \brief Unknown connection identifier */
@@ -148,6 +152,7 @@ extern "C" {
  *
  */
 /**@{*/
+//done
 #define HCI_OGF_NOP                                  0x00    /*!< \brief No operation */
 #define HCI_OGF_LINK_CONTROL                         0x01    /*!< \brief Link control */
 #define HCI_OGF_LINK_POLICY                          0x02    /*!< \brief Link policy */
@@ -163,114 +168,121 @@ extern "C" {
  *
  */
 /**@{*/
-#define HCI_OCF_NOP                                  0x00
+#define HCI_OCF_NOP                                  0x00//done
 /**@}*/
 
 /** \name Link control commands
  *
  */
 /**@{*/
-#define HCI_OCF_DISCONNECT                           0x06
-#define HCI_OCF_READ_REMOTE_VER_INFO                 0x1D
+//done
+#define HCI_OCF_DISCONNECT                           0x06//done
+#define HCI_OCF_READ_REMOTE_VER_INFO                 0x1D//done
 /**@}*/
 
 /*! \brief Link policy commands (none used for LE) */
+/** 链接策略命令（LE 未使用） */
 
 /** \name Controller and baseband commands
- *
+ *  控制器和基带命令
  */
 /**@{*/
-#define HCI_OCF_SET_EVENT_MASK                       0x01
-#define HCI_OCF_RESET                                0x03
-#define HCI_OCF_READ_TX_PWR_LVL                      0x2D
-#define HCI_OCF_SET_CONTROLLER_TO_HOST_FC            0x31
-#define HCI_OCF_HOST_BUFFER_SIZE                     0x33
-#define HCI_OCF_HOST_NUM_CMPL_PKTS                   0x35
-#define HCI_OCF_SET_EVENT_MASK_PAGE2                 0x63
-#define HCI_OCF_READ_AUTH_PAYLOAD_TO                 0x7B
-#define HCI_OCF_WRITE_AUTH_PAYLOAD_TO                0x7C
+//done
+#define HCI_OCF_SET_EVENT_MASK                       0x01//done
+#define HCI_OCF_RESET                                0x03//done
+#define HCI_OCF_READ_TX_PWR_LVL                      0x2D//done
+#define HCI_OCF_SET_CONTROLLER_TO_HOST_FC            0x31//done
+#define HCI_OCF_HOST_BUFFER_SIZE                     0x33//done
+#define HCI_OCF_HOST_NUM_CMPL_PKTS                   0x35//done
+#define HCI_OCF_SET_EVENT_MASK_PAGE2                 0x63//done
+#define HCI_OCF_READ_AUTH_PAYLOAD_TO                 0x7B//done
+#define HCI_OCF_WRITE_AUTH_PAYLOAD_TO                0x7C//done
 
 /* Version 5.2 */
-#define HCI_OCF_CONFIG_DATA_PATH                     0x83
+//done
+#define HCI_OCF_CONFIG_DATA_PATH                     0x83//done
 /**@}*/
 
 /** \name Informational commands
  *
  */
 /**@{*/
-#define HCI_OCF_READ_LOCAL_VER_INFO                  0x01
-#define HCI_OCF_READ_LOCAL_SUP_CMDS                  0x02
-#define HCI_OCF_READ_LOCAL_SUP_FEAT                  0x03
-#define HCI_OCF_READ_BUF_SIZE                        0x05
-#define HCI_OCF_READ_BD_ADDR                         0x09
+//done
+#define HCI_OCF_READ_LOCAL_VER_INFO                  0x01//done
+#define HCI_OCF_READ_LOCAL_SUP_CMDS                  0x02//done
+#define HCI_OCF_READ_LOCAL_SUP_FEAT                  0x03//done
+#define HCI_OCF_READ_BUF_SIZE                        0x05//done
+#define HCI_OCF_READ_BD_ADDR                         0x09//done
 
 /* Version 5.2 */
-#define HCI_OCF_READ_LOCAL_SUP_CODECS                0x0D
-#define HCI_OCF_READ_LOCAL_SUP_CODEC_CAP             0x0E
-#define HCI_OCF_READ_LOCAL_SUP_CONTROLLER_DLY        0x0F
+//done
+#define HCI_OCF_READ_LOCAL_SUP_CODECS                0x0D//done
+#define HCI_OCF_READ_LOCAL_SUP_CODEC_CAP             0x0E//done
+#define HCI_OCF_READ_LOCAL_SUP_CONTROLLER_DLY        0x0F//done
 /**@}*/
 
 /** \name Status commands
  *
  */
 /**@{*/
-#define HCI_OCF_READ_RSSI                            0x05
+//done
+#define HCI_OCF_READ_RSSI                            0x05//done
 /**@}*/
 
 /** \name LE controller commands
  *
  */
 /**@{*/
-#define HCI_OCF_LE_SET_EVENT_MASK                    0x01
-#define HCI_OCF_LE_READ_BUF_SIZE                     0x02
-#define HCI_OCF_LE_READ_LOCAL_SUP_FEAT               0x03
-#define HCI_OCF_LE_SET_RAND_ADDR                     0x05
-#define HCI_OCF_LE_SET_ADV_PARAM                     0x06
-#define HCI_OCF_LE_READ_ADV_TX_POWER                 0x07
-#define HCI_OCF_LE_SET_ADV_DATA                      0x08
-#define HCI_OCF_LE_SET_SCAN_RESP_DATA                0x09
-#define HCI_OCF_LE_SET_ADV_ENABLE                    0x0A
-#define HCI_OCF_LE_SET_SCAN_PARAM                    0x0B
-#define HCI_OCF_LE_SET_SCAN_ENABLE                   0x0C
-#define HCI_OCF_LE_CREATE_CONN                       0x0D
-#define HCI_OCF_LE_CREATE_CONN_CANCEL                0x0E
-#define HCI_OCF_LE_READ_WHITE_LIST_SIZE              0x0F
-#define HCI_OCF_LE_CLEAR_WHITE_LIST                  0x10
-#define HCI_OCF_LE_ADD_DEV_WHITE_LIST                0x11
-#define HCI_OCF_LE_REMOVE_DEV_WHITE_LIST             0x12
-#define HCI_OCF_LE_CONN_UPDATE                       0x13
-#define HCI_OCF_LE_SET_HOST_CHAN_CLASS               0x14
-#define HCI_OCF_LE_READ_CHAN_MAP                     0x15
-#define HCI_OCF_LE_READ_REMOTE_FEAT                  0x16
-#define HCI_OCF_LE_ENCRYPT                           0x17
-#define HCI_OCF_LE_RAND                              0x18
-#define HCI_OCF_LE_START_ENCRYPTION                  0x19
-#define HCI_OCF_LE_LTK_REQ_REPL                      0x1A
-#define HCI_OCF_LE_LTK_REQ_NEG_REPL                  0x1B
-#define HCI_OCF_LE_READ_SUP_STATES                   0x1C
-#define HCI_OCF_LE_RECEIVER_TEST                     0x1D
-#define HCI_OCF_LE_TRANSMITTER_TEST                  0x1E
-#define HCI_OCF_LE_TEST_END                          0x1F
+#define HCI_OCF_LE_SET_EVENT_MASK                    0x01//done
+#define HCI_OCF_LE_READ_BUF_SIZE                     0x02//done
+#define HCI_OCF_LE_READ_LOCAL_SUP_FEAT               0x03//done
+#define HCI_OCF_LE_SET_RAND_ADDR                     0x05//done
+#define HCI_OCF_LE_SET_ADV_PARAM                     0x06//done
+#define HCI_OCF_LE_READ_ADV_TX_POWER                 0x07//done
+#define HCI_OCF_LE_SET_ADV_DATA                      0x08//done
+#define HCI_OCF_LE_SET_SCAN_RESP_DATA                0x09//done
+#define HCI_OCF_LE_SET_ADV_ENABLE                    0x0A//done
+#define HCI_OCF_LE_SET_SCAN_PARAM                    0x0B//done
+#define HCI_OCF_LE_SET_SCAN_ENABLE                   0x0C//done
+#define HCI_OCF_LE_CREATE_CONN                       0x0D//done
+#define HCI_OCF_LE_CREATE_CONN_CANCEL                0x0E//done
+#define HCI_OCF_LE_READ_WHITE_LIST_SIZE              0x0F//done
+#define HCI_OCF_LE_CLEAR_WHITE_LIST                  0x10//done
+#define HCI_OCF_LE_ADD_DEV_WHITE_LIST                0x11//done
+#define HCI_OCF_LE_REMOVE_DEV_WHITE_LIST             0x12//done
+#define HCI_OCF_LE_CONN_UPDATE                       0x13//done
+#define HCI_OCF_LE_SET_HOST_CHAN_CLASS               0x14//done
+#define HCI_OCF_LE_READ_CHAN_MAP                     0x15//done
+#define HCI_OCF_LE_READ_REMOTE_FEAT                  0x16//done
+#define HCI_OCF_LE_ENCRYPT                           0x17//done
+#define HCI_OCF_LE_RAND                              0x18//done
+#define HCI_OCF_LE_START_ENCRYPTION                  0x19//done
+#define HCI_OCF_LE_LTK_REQ_REPL                      0x1A//done
+#define HCI_OCF_LE_LTK_REQ_NEG_REPL                  0x1B//done
+#define HCI_OCF_LE_READ_SUP_STATES                   0x1C//done
+#define HCI_OCF_LE_RECEIVER_TEST                     0x1D//done
+#define HCI_OCF_LE_TRANSMITTER_TEST                  0x1E//done
+#define HCI_OCF_LE_TEST_END                          0x1F//done
 /*! \brief New in version 4.1 */
-#define HCI_OCF_LE_REM_CONN_PARAM_REP                0x20
-#define HCI_OCF_LE_REM_CONN_PARAM_NEG_REP            0x21
+#define HCI_OCF_LE_REM_CONN_PARAM_REP                0x20//done
+#define HCI_OCF_LE_REM_CONN_PARAM_NEG_REP            0x21//done
 /*! \brief New in version 4.2 */
-#define HCI_OCF_LE_SET_DATA_LEN                      0x22
-#define HCI_OCF_LE_READ_DEF_DATA_LEN                 0x23
-#define HCI_OCF_LE_WRITE_DEF_DATA_LEN                0x24
-#define HCI_OCF_LE_READ_LOCAL_P256_PUB_KEY           0x25
-#define HCI_OCF_LE_GENERATE_DHKEY                    0x26
-#define HCI_OCF_LE_ADD_DEV_RES_LIST                  0x27
-#define HCI_OCF_LE_REMOVE_DEV_RES_LIST               0x28
-#define HCI_OCF_LE_CLEAR_RES_LIST                    0x29
-#define HCI_OCF_LE_READ_RES_LIST_SIZE                0x2A
-#define HCI_OCF_LE_READ_PEER_RES_ADDR                0x2B
-#define HCI_OCF_LE_READ_LOCAL_RES_ADDR               0x2C
-#define HCI_OCF_LE_SET_ADDR_RES_ENABLE               0x2D
-#define HCI_OCF_LE_SET_RES_PRIV_ADDR_TO              0x2E
-#define HCI_OCF_LE_READ_MAX_DATA_LEN                 0x2F
+#define HCI_OCF_LE_SET_DATA_LEN                      0x22//done
+#define HCI_OCF_LE_READ_DEF_DATA_LEN                 0x23//done
+#define HCI_OCF_LE_WRITE_DEF_DATA_LEN                0x24//done
+#define HCI_OCF_LE_READ_LOCAL_P256_PUB_KEY           0x25//done
+#define HCI_OCF_LE_GENERATE_DHKEY                    0x26//done
+#define HCI_OCF_LE_ADD_DEV_RES_LIST                  0x27//done
+#define HCI_OCF_LE_REMOVE_DEV_RES_LIST               0x28//done
+#define HCI_OCF_LE_CLEAR_RES_LIST                    0x29//done
+#define HCI_OCF_LE_READ_RES_LIST_SIZE                0x2A//done
+#define HCI_OCF_LE_READ_PEER_RES_ADDR                0x2B//done
+#define HCI_OCF_LE_READ_LOCAL_RES_ADDR               0x2C//done
+#define HCI_OCF_LE_SET_ADDR_RES_ENABLE               0x2D//done
+#define HCI_OCF_LE_SET_RES_PRIV_ADDR_TO              0x2E//done
+#define HCI_OCF_LE_READ_MAX_DATA_LEN                 0x2F//done
 /*! \brief New in version 5.0 */
-#define HCI_OCF_LE_READ_PHY                          0x30
+#define HCI_OCF_LE_READ_PHY                          0x30//done
 #define HCI_OCF_LE_SET_DEF_PHY                       0x31
 #define HCI_OCF_LE_SET_PHY                           0x32
 #define HCI_OCF_LE_ENHANCED_RECEIVER_TEST            0x33
@@ -353,6 +365,7 @@ extern "C" {
  *
  */
 /**@{*/
+//done
 #define HCI_OPCODE(ogf, ocf)                         (((ogf) << 10) + (ocf))
 #define HCI_OGF(opcode)                              ((opcode) >> 10)
 #define HCI_OCF(opcode)                              ((opcode) & 0x03FF)
